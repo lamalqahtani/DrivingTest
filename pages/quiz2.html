@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/quiz-layout.css">
+    <title>الإختبار التجريبي الأول</title>
+</head>
+<body>
+    <!-- the action will show the result pop-up or alert  -->
+    <form class="test-form">
+        <div class="question-container">
+            <label for="q1">
+             ما هي السرعة القصوى المسموح بها في الطرق السريعة في المملكة العربية السعودية؟
+            </label>
+            <select name="q1" id="">
+                <option value="0">100 كيلومتر في الساعة</option>
+                <option value="1">120 كيلومتر في الساعة</option>
+                <option value="0">140 كيلومتر في الساعة</option>
+                <option value="0">160 كيلومتر في الساعة</option>
+            </select>
+        </div>
+        <div class="question-container">
+            <label for="q2">  ما هي الإشارة المرورية التي تدل على السير باتجاه معين؟ </label>
+               <select name="q2" id="">
+                   <option value="0"> إشارة تحذير</option>
+                   <option value="0"> إشارة ممنوع الدخول</option>
+                   <option value="1">إشارة اتجاه السير</option>
+                   <option value="0"> إشارة تقاطع طرق رئيسية</option>
+               </select>
+        </div>
+
+        <div class="question-container">
+            <label for="q3">ما هي الإجراءات الواجب اتخاذها قبل الانطلاق بالسيارة؟            </label>
+            <select name="q3" id="">
+                <option value="0">التأكد من سلامة الإطارات والفرامل</option>
+                <option value="0"> التأكد من وجود الوقود الكافي</option>
+                <option value="0"> التأكد من وجود المستندات اللازمة مثل رخصة القيادة والتأمين</option>
+                <option value="1">جميع ما ذكر</option>
+            </select>
+        </div>
+
+        <div class="question-container">
+            <label for="q4">ما هي الإشارة المرورية التي تدل على المرور الأولوية؟</label>
+            <select name="q4" id="">
+                <option value="0"> إشارة تحذير </option>
+                <option value="0">  إشارة ممنوع الدخول</option>
+                <option value="0">  إشارة توقف إجباري</option>
+                <option value="1">  إشارة الأولوية</option>
+            </select>
+        </div>
+        
+        <div class="question-container">
+            <label for="q5">ما هو الضوء الذي يجب تشغيله عند القيادة في الظلام؟</label>
+            <select name="q5" id="">
+                <option value="0">  الضوء العالي</option>
+                <option value="1">  الضوء المنخفض</option>
+                <option value="0"> الضوء الأصبع</option>
+                <option value="0">الضوء الأمامي والخلفي</option>
+            </select>
+        </div>
+
+        <div class="question-container">
+            <label for="q6">ما هي الإشارة المرورية التي تدل على وجود تقاطع طرق مع تدفق المرور من اليسار؟</label>
+            <select name="q6" id="">
+                <option value="0">  إشارة توقف إجباري</option>
+                <option value="0">  إشارة تقاطع طرق رئيسية</option>
+                <option value="0">  إشارة ممنوع الدخول</option>
+                <option value="1">إشارة التحذير</option>
+            </select>
+        </div>
+
+        <div class="question-container">
+            <label for="q7">ما هو الضوء الذي يجب تشغيله عند القيادة في الأمطار الغزيرة؟</label>
+            <select name="q7" id="">
+                <option value="0">   الضوء العالي</option>
+                <option value="0">  الضوء المنخفض</option>
+                <option value="0">  الضوء الأصفر</option>
+                <option value="1">الضوء الأمامي والخلفي</option>
+            </select>
+        </div>
+
+        <div class="question-container">
+            <label for="q8">ما هي الإشارة المرورية التي تدل على المنطقة الصناعية؟</label>
+            <select name="q8" id="">
+                <option value="0">  إشارة الأولوية</option>
+                <option value="0">   إشارة توقف إجباري</option>
+                <option value="1">  إشارة المنطقة الصناعية</option>
+                <option value="0">إشارة التحذير</option>
+            </select>
+        </div>
+
+        <div class="question-container">
+            <label for="q9">ما هي الأدوات الواجب وجودها في السيارة؟</label>
+            <select name="q9" id="">
+                <option value="0">  الكمبيوتر الشخصي</option>
+                <option value="0">   الحاسبة</option>
+                <option value="0">  القاموس</option>
+                <option value="1"> العجلة الاحتياطية وجهاز الإنذار</option>
+            </select>
+        </div>
+
+        <div class="question-container">
+            <label for="q10">ما هي الإشارة المرورية التي تدل على المنطقة السكنية؟</label>
+            <select name="q10" id="">
+                <option value="0">  إشارة المنطقة الصناعية</option>
+                <option value="1">    إشارة المنطقة السكنية</option>
+                <option value="0">   إشارة توقف إجباري</option>
+                <option value="0">إشارة التحذير</option>
+            </select>
+        </div>
+
+        <button type="submit">تسليم الإختبار</button>
+
+    </form>
+    <h2 id="result"></h2>
+    <script src="../src/index.js"></script>
+</body>
+</html>
